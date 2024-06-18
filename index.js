@@ -13,6 +13,7 @@ const item = require('./model/Items')
 
 const app = express();
 app.use(express.json());
+app.use(express.urlencoded({ extended: true })); 
 const port = 4444;
 app.use(cors());
 
